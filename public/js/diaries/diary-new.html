@@ -1,0 +1,49 @@
+<div>
+  <h3>Build Your "BEAUTY DIARY"</h3>
+  <form id='new-diary' ng-submit="newDiary.addDiary()">
+    <div>
+      <label for="category">Skin:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.skin.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.skin.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.skin.usedFor">
+    </div>
+
+    <div>
+      <label for="category">Face:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.face.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.face.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.face.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Eyes:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.eyes.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.eyes.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.eyes.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Lips:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.lips.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.lips.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.lips.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Cheeks:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.cheeks.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.cheeks.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.cheeks.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Tools:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.tools.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.tools.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.tools.shadeName">
+    </div>
+
+
+    <input type="submit" value="Add">
+  </form>
+</div>

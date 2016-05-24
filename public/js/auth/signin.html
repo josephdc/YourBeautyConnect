@@ -1,13 +1,14 @@
 <div class="sign-in-form" ng-hide="vm.toggleValue">
-  <h1>Sign In</h1>
+  <h3>Welcome to</h3>
+  <h1>Your Beauty Connect</h1>
 
   <form ng-submit="vm.submitLogIn();" name="signInForm" novalidate>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input ng-model="vm.logIn.email" type="email" ng-model="email" name="email" required class="form-control" id="exampleInputEmail1" placeholder="Email">
+      <label for="exampleInputEmail1"></label>
+      <input ng-model="vm.logIn.userName" type="UserName" ng-model="userName" name="User Name" required class="form-control" id="exampleInputUserName" placeholder="User Name">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <label for="exampleInputPassword1"></label>
       <input ng-model="vm.logIn.password" type="password" ng-model="password" name="password" required class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
     <button type="submit" ng-disabled="signInForm.$invalid" class="btn btn-default">Submit</button>
@@ -19,35 +20,76 @@
       <a class="underline" ng-click="vm.toggleValue = !vm.toggleValue;"><u>Sign Up</u></a>.
     </strong>
   </p>
+
 </div> <!-- sign-in-form -->
 
 <div class="sign-up-form" ng-show="vm.toggleValue">
-  <h1>Sign Up</h1>
+  <h1>Create Your Beauty Profile</h1>
 
   <form ng-submit="vm.submitSignUp();">
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
+      <label for="exampleInputFirstName"></label>
+      <input ng-model="vm.signUp.firstName" type="text" class="form-control" id="exampleInputFirstName" placeholder="First Name">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputLastName"></label>
+      <input ng-model="vm.signUp.lastName" type="text" class="form-control" id="exampleInputLastName" placeholder="Last Name">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputUserName"></label>
+      <input ng-model="vm.signUp.userName" type="text" ng-class="{'red-border': vm.conflict}" class="form-control" id="exampleInputUserName" placeholder="User Name">
+      <small ng-show="vm.conflict" class="text-danger"><em>User Name exists…</em></small>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail"></label>
       <input ng-model="vm.signUp.email" type="email" ng-class="{'red-border': vm.conflict}" class="form-control" id="exampleInputEmail1" placeholder="Email">
       <small ng-show="vm.conflict" class="text-danger"><em>Email exists…</em></small>
     </div>
+
     <div class="form-group">
-      <label for="exampleInputName">Name</label>
-      <input ng-model="vm.signUp.name" type="text" class="form-control" id="exampleInputName" placeholder="Name">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <label for="exampleInputPassword1"></label>
       <input ng-model="vm.signUp.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
+
     <div class="form-group">
-      <label for="exampleInputPassword2">Password confirmation</label>
-      <input ng-model="vm.signUp.passwordConfirmation" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+      <label for="exampleInputPassword2"></label>
+      <input ng-model="vm.signUp.passwordConfirmation" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password Confirmation">
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+
+    <div class="form-group">
+      <label for="exampleInputBirthday"></label>
+      <input ng-model="vm.signUp.birthday" type="date" class="form-control" id="exampleInputBirthday" placeholder="Birthday - optional">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputfavBrand1"></label>
+      <input ng-model="vm.signUp.favBrand1" type="text" class="form-control" id="exampleInputfavBrand1" placeholder="Favorite Cosmetic Brand">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputfavBrand2"></label>
+      <input ng-model="vm.signUp.favBrand2" type="text" class="form-control" id="exampleInputfavBrand2" placeholder="Favorite Cosmetic Brand">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputfavBrand3"></label>
+      <input ng-model="vm.signUp.favBrand3" type="text" class="form-control" id="exampleInputfavBrand3" placeholder="Favorite Cosmetic Brand">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputfavBrand4"></label>
+      <input ng-model="vm.signUp.favBrand4" type="text" class="form-control" id="exampleInputfavBrand4" placeholder="Favorite Cosmetic Brand">
+    </div>
+
+    <button type="submit" class="btn btn-default">CREATE</button>
   </form>
 
   <p>
     <strong>
-      If you are already a user,
+      If you are already have a Beauty Profile,
       <a class="underline" ng-click="vm.toggleValue = !vm.toggleValue;"><u>Sign In</u></a>.
     </strong>
   </p>

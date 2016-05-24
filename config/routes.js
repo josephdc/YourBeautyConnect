@@ -8,24 +8,26 @@ var usersCtrl = require('../controllers/users');
 var token = require('../config/token_auth');
 
 router.route('/api/diaries')
-  .get(diariesController.index)
-  .post(diariesController.create);
+  .get(token.authenticate, diariesController.index)
+  .post(token.authenticate, diariesController.create);
 
 router.route('/api/diaries/:id')
-  .get(diariesController.show)
+  .get(token.authenticate, diariesController.show)
   .put(token.authenticate, diariesController.update)
-  .delete(diariesController.destroy);
+  .delete(token.authenticate, diariesController.destroy);
 
+// No need for authentication when creating a user
 router.route('/api/users')
   .post(usersCtrl.create);
 
 router.route('/api/users/:id')
-  .put(usersCtrl.update)
-  .delete(usersCtrl.destroy);
+  .put(token.authenticate, usersCtrl.update)
+  .delete(token.authenticate, usersCtrl.destroy);
 
 router.route('/api/users/me')
   .get(token.authenticate, usersCtrl.me);
 
+// Can't authenticate until they sign-in
 router.route('/api/token')
   .post(token.create);
 

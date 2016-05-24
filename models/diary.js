@@ -6,6 +6,13 @@ var categorySchema = new mongoose.Schema({
     shadeName:   String
 });
 
+var skinSchema = new mongoose.Schema({
+    brandName:   String,
+    productName: String,
+    usedFor:     String
+})
+
+
 var toolSchema = new mongoose.Schema({
     brandName:   String,
     productName: String,
@@ -13,7 +20,7 @@ var toolSchema = new mongoose.Schema({
 });
 
 var diarySchema = new mongoose.Schema({
-    skin:   categorySchema,
+    skin:   skinSchema,
     face:   categorySchema,
     eyes:   categorySchema,
     lips:   categorySchema,

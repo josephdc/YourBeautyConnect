@@ -1,0 +1,48 @@
+<div>
+  <h3>Edit Diary</h3>
+  <form id='edit-diary' ng-submit="diaryEdit.editDiary()">
+    <div>
+      <label for="category">Skin:</label>
+      <input type="text" name="Brand Name"   ng-model="editDiary.skin.brandName">
+      <input type="text" name="Product Name" ng-model="editDiary.skin.productName">
+      <input type="text" name="Shade Name"   ng-model="editDiary.skin.usedFor">
+    </div>
+
+    <div>
+      <label for="category">Face:</label>
+      <input type="text" name="Brand Name"   ng-model="editDiary.face.brandName">
+      <input type="text" name="Product Name" ng-model="editDiary.face.productName">
+      <input type="text" name="Shade Name"   ng-model="editDiary.face.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Eyes:</label>
+      <input type="text" name="Brand Name"   ng-model="editDiary.eyes.brandName">
+      <input type="text" name="Product Name" ng-model="editDiary.eyes.productName">
+      <input type="text" name="Shade Name"   ng-model="editDiary.eyes.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Lips:</label>
+      <input type="text" name="Brand Name"   ng-model="editDiary.lips.brandName">
+      <input type="text" name="Product Name" ng-model="editDiary.lips.productName">
+      <input type="text" name="Shade Name"   ng-model="editDiary.lips.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Cheeks:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.cheeks.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.cheeks.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.cheeks.shadeName">
+    </div>
+
+    <div>
+      <label for="category">Tools:</label>
+      <input type="text" name="Brand Name"   ng-model="newDiary.tools.brandName">
+      <input type="text" name="Product Name" ng-model="newDiary.tools.productName">
+      <input type="text" name="Shade Name"   ng-model="newDiary.tools.shadeName">
+    </div>
+
+    <input type="submit" value="Edit">
+  </form>
+</div>

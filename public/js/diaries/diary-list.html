@@ -1,0 +1,14 @@
+Diary List Template
+<a ui-sref="diaryList"></a>
+<div ng-repeat="diary in diaryListVm.diaries">
+  <p>{{diary.skin}}  </p>
+  <p>{{diary.face}}  </p>
+  <p>{{diary.eyes}}  </p>
+  <p>{{diary.lips}}  </p>
+  <p>{{diary.cheeks}}</p>
+  <p>{{diary.tools}} </p>
+
+  <a ui-sref="showShow({id: show._id})">See This Show</a>
+  <a ng-click="showListVm.destroy(show)">This Show Sucks!</a>
+  <hr>
+</div>
