@@ -20,11 +20,19 @@
         })
 
         .state("userEdit", {
-        url:         "/user/edit/:id",
-        templateUrl: "js/users/user-edit.html",
-        controller:  "UserEditController",
+        url:           "/user/edit/:id",
+        templateUrl:  "js/users/user-edit.html",
+        controller:   "UserEditController",
         controllerAs: "editUserVm"
         })
+
+        // .state("userDelete", {
+        // url:           "/user/delete/:id",
+        // templateUrl:   "js/users/user-delete.html",
+        // controller:    "UserDeleteController",
+        // controllerAs:  "deleteUserVm"
+        // })
+
 
         //User Diary
         .state("diaryShow", {

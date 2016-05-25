@@ -1,7 +1,7 @@
 (function() {
   angular.module('ybcApp')
       .controller("UserShowController", UserShowController)
-      .controller("UserEditController", UserEditController)
+      .controller("UserEditController", UserEditController);
 
       UserShowController.$inject = ['UserResource', '$stateParams'];
       UserEditController.$inject = ['UserResource', '$stateParams', '$state'];
@@ -21,8 +21,8 @@
       vm.user = {};
       vm.editUser = editUser;
 
-      UserResource.get({id: $stateParams.id}).$promise.then(function(jsonUser) {
-      vm.user = jsonUser;
+      UserResource.get({id: $stateParams.id}).$promise.then(function(resp) {
+      vm.user = resp.data;
       });
       function editUser() {
         UserResource.update({id: vm.user._id}, vm.user).$promise.then(function(updatedUser) {

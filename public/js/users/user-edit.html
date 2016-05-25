@@ -1,2 +1,32 @@
-<h1>Your Beauty Profile</h1>
+<div>
+<h1>My Beauty Profile</h1>
+<form id='edit-user' ng-submit="editUserVm.editUser()">
+    <div>
+    <input type="text" name="First Name"       ng-model="editUserVm.user.firstName">
+    <input type="text" name="Last Name"        ng-model="editUserVm.user.lastName">
+    </div>
 
+    <div>
+    <input type="text" name="User Name"        ng-model="editUserVm.user.userName">
+    <input type="text" name="Email"            ng-model="editUserVm.user.email">
+    <input type="text" name="Birthday"         ng-model="editUserVm.user.birthday">
+    </div>
+
+    <div>
+    <input type="text" name="Favorite Brand 1" ng-model="editUserVm.user.favBrand1">
+    </div>
+    <div>
+    <input type="text" name="Favorite Brand 2" ng-model="editUserVm.user.favBrand2">
+    </div>
+    <div>
+    <input type="text" name="Favorite Brand 3" ng-model="editUserVm.user.favBrand3">
+    </div>
+    <div>
+    <input type="text" name="Favorite Brand 4" ng-model="editUserVm.user.favBrand4">
+    </div>
+
+    <input type="submit" value="Edit">
+  </form>
+</div>
+
+<!-- create save button or how does this save? -->
