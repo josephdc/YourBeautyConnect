@@ -1,14 +1,14 @@
 (function() {
   angular.module('ybcApp')
 //     .controller("ShowListController", ShowListController)
-//     .controller("ShowShowController", ShowShowController)
+       .controller("DiaryShowController", DiaryShowController)
        .controller("NewDiaryController", NewDiaryController)
-//     .controller("ShowEditController", ShowEditController);
+       // .controller("DiaryEditController", DiaryEditController);
 
 //     ShowListController.$inject = ['ShowResource'];
-//     ShowShowController.$inject = ['ShowResource', '$stateParams'];
+       DiaryShowController.$inject = ['DiaryResource', '$stateParams'];
        NewDiaryController.$inject = ['DiaryResource', '$state'];
-//     ShowEditController.$inject = ['ShowResource', '$stateParams', '$state'];
+       // DiaryEditController.$inject = ['DiaryResource', '$stateParams', '$state'];
 
 //     function ShowListController(ShowResource) {
 //       var vm = this;
@@ -29,14 +29,14 @@
 //       }
 //     }
 
-//     function ShowShowController(ShowResource, $stateParams) {
-//       var vm = this;
-//       vm.show = {};
+    function DiaryShowController(DiaryResource, $stateParams) {
+      var vm = this;
+      vm.diary = {};
 
-//       ShowResource.get({id: $stateParams.id}).$promise.then(function(jsonShow) {
-//           vm.show = jsonShow;
-//       });
-//     }
+      DiaryResource.get({id: $stateParams.id}).$promise.then(function(jsonDiary) {
+          vm.diary = jsonDiary;
+      });
+    }
 
     function NewDiaryController(DiaryResource, $state) {
       var vm = this;
@@ -46,26 +46,26 @@
       function addDiary() {
         DiaryResource.save(vm.newDiary).$promise.then(function(jsonDiary) {
           vm.newDiary = {};
-          $state.go('newDiary', {id: jsonDiary._id});
+          $state.go('diaryShow', {id: jsonDiary._id});
         });
       }
     }
 
-//     function ShowEditController(ShowResource, $stateParams, $state) {
-//       var vm = this;
-//       vm.show = {};
-//       vm.editShow = editShow;
+    // function DiaryEditController(DiaryResource, $stateParams, $state) {
+    //   var vm = this;
+    //   vm.show = {};
+    //   vm.editDiary = editDiary;
 
-//       ShowResource.get({id: $stateParams.id}).$promise.then(function(jsonShow) {
-//           vm.show = jsonShow;
-//       });
+    //   DiaryResource.get({id: $stateParams.id}).$promise.then(function(jsonDiary) {
+    //       vm.diary = jsonDiary;
+    //   });
 
-//       function editShow() {
-//         ShowResource.update({id: vm.show._id}, vm.show).$promise.then(function(updatedShow) {
-//           vm.show = updatedShow;
-//           $state.go('showShow', {id: updatedShow._id});
-//         });
-//       }
-//     }
+    //   function editDiary() {
+    //     DiaryResource.update({id: vm.diary._id}, vm.diary).$promise.then(function(updatedDiary) {
+    //       vm.diary = updatedDiary;
+    //       $state.go('editDiary', {id: updatedDiary._id});
+    //     });
+    //   }
+    // }
 
 })();

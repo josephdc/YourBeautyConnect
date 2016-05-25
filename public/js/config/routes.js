@@ -18,18 +18,25 @@
         //   controllerAs: 'NewDiaryVm'
         // })
 
-        .state('diaryNew', {
+        .state("diaryShow", {
+        url:            "/diary/show/:id",
+        templateUrl:    "js/diaries/diary-show.html",
+        controller:     "DiaryShowController",
+        controllerAs:   "diaryShowVm"
+        })
+
+        .state("diaryNew", {
           url:          "/diary/new",
           templateUrl:  "js/diaries/diary-new.html",
-          controller:   'newDiaryController',
-          controllerAs: 'newDiaryVm'
+          controller:   "NewDiaryController",
+          controllerAs: "newDiaryVm"
         })
 
         //  .state('diaryEdit', {
         //     url:         "/diaries/new",
         //     templateUrl: "js/diaries/diary-edit.html",
         //     controller:  'EditDiary'
-        //     controllerAs:
+        //     controllerAs: ""
         // })
 
           .state("signin", {
