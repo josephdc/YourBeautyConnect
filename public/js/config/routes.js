@@ -26,12 +26,12 @@
         controllerAs: "editUserVm"
         })
 
-        // .state("userDelete", {
-        // url:           "/user/delete/:id",
-        // templateUrl:   "js/users/user-delete.html",
-        // controller:    "UserDeleteController",
-        // controllerAs:  "deleteUserVm"
-        // })
+        .state("userDelete", {
+        url:           "/user/delete/:id",
+        templateUrl:   "js/users/user-delete.html",
+        controller:    "UserDeleteController",
+        controllerAs:  "deleteUserVm"
+        })
 
 
         //User Diary

@@ -2,31 +2,32 @@
 <h1>My Beauty Profile</h1>
 <form id='edit-user' ng-submit="editUserVm.editUser()">
     <div>
-    <input type="text" name="First Name"       ng-model="editUserVm.user.firstName">
-    <input type="text" name="Last Name"        ng-model="editUserVm.user.lastName">
+    <input type="text" name="First Name"       ng-model="editUserVm.user.firstName" placeholder="First Name">
+    <input type="text" name="Last Name"        ng-model="editUserVm.user.lastName" placeholder="Last Name">
     </div>
 
     <div>
-    <input type="text" name="User Name"        ng-model="editUserVm.user.userName">
-    <input type="text" name="Email"            ng-model="editUserVm.user.email">
-    <input type="text" name="Birthday"         ng-model="editUserVm.user.birthday">
+    <input type="text" name="User Name"        ng-model="editUserVm.user.userName" placeholder="User Name">
+    <input type="text" name="Email"            ng-model="editUserVm.user.email" placeholder="Email">
+    <input type="text" name="Birthday"         ng-model="editUserVm.user.birthday" placeholder="Birthday">
     </div>
 
     <div>
-    <input type="text" name="Favorite Brand 1" ng-model="editUserVm.user.favBrand1">
+    <input type="text" name="Favorite Brand 1" ng-model="editUserVm.user.favBrand1" placeholder="Favorite Brand 1">
     </div>
     <div>
-    <input type="text" name="Favorite Brand 2" ng-model="editUserVm.user.favBrand2">
+    <input type="text" name="Favorite Brand 2" ng-model="editUserVm.user.favBrand2" placeholder="Favorite Brand 2">
     </div>
     <div>
-    <input type="text" name="Favorite Brand 3" ng-model="editUserVm.user.favBrand3">
+    <input type="text" name="Favorite Brand 3" ng-model="editUserVm.user.favBrand3" placeholder="Favorite Brand 3">
     </div>
     <div>
-    <input type="text" name="Favorite Brand 4" ng-model="editUserVm.user.favBrand4">
+    <input type="text" name="Favorite Brand 4" ng-model="editUserVm.user.favBrand4" placeholder="Favorite Brand 4">
     </div>
 
-    <input type="submit" value="Edit">
+    <input type="submit" value="Edit"></input>
+    <a ng-click="userShowVm.delete(user)">Delete Profile</a>
+  <hr>
   </form>
 </div>
 
-<!-- create save button or how does this save? -->
