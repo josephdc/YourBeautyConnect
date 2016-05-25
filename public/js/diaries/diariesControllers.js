@@ -1,33 +1,23 @@
 (function() {
   angular.module('ybcApp')
-//     .controller("ShowListController", ShowListController)
        .controller("DiaryShowController", DiaryShowController)
        .controller("NewDiaryController", NewDiaryController)
-       // .controller("DiaryEditController", DiaryEditController);
+       .controller("DiaryEditController", DiaryEditController)
+       // .controller("DestroyDiaryController", DestroyDiaryController);
 
-//     ShowListController.$inject = ['ShowResource'];
        DiaryShowController.$inject = ['DiaryResource', '$stateParams'];
        NewDiaryController.$inject = ['DiaryResource', '$state'];
-       // DiaryEditController.$inject = ['DiaryResource', '$stateParams', '$state'];
+       DiaryEditController.$inject = ['DiaryResource', '$stateParams', '$state'];
+       // DestroyDiaryController.$inject = ['DiaryResource', '$stateParams', '$state'];
 
-//     function ShowListController(ShowResource) {
-//       var vm = this;
-//       vm.shows = [];
-//       vm.destroy = destroy;
-
-//       ShowResource.query().$promise.then(function(shows) {
-//         vm.shows = shows;
-//       });
-
-//       function destroy(showToDelete) {
-//         ShowResource.delete({id: showToDelete._id}).$promise.then(function (response) {
-//           console.log(response.message);
-//           vm.shows = vm.shows.filter(function(show) {
-//             return show != showToDelete;
-//           });
-//         });
-//       }
-//     }
+      // function DestroyDiaryController(diaryToDelete) {
+      //   DiaryResource.delete({id: diaryToDelete._id}).$promise.then(function (response) {
+      //     console.log(response.message);
+      //     vm.diaries = vm.diaries.filter(function(diary) {
+      //       return diary != diaryToDelete;
+      //     });
+      //   });
+      // }
 
     function DiaryShowController(DiaryResource, $stateParams) {
       var vm = this;
@@ -51,21 +41,20 @@
       }
     }
 
-    // function DiaryEditController(DiaryResource, $stateParams, $state) {
-    //   var vm = this;
-    //   vm.show = {};
-    //   vm.editDiary = editDiary;
+    function DiaryEditController(DiaryResource, $stateParams, $state) {
+      var vm = this;
+      vm.diary = {};
+      vm.editDiary = editDiary;
 
-    //   DiaryResource.get({id: $stateParams.id}).$promise.then(function(jsonDiary) {
-    //       vm.diary = jsonDiary;
-    //   });
-
-    //   function editDiary() {
-    //     DiaryResource.update({id: vm.diary._id}, vm.diary).$promise.then(function(updatedDiary) {
-    //       vm.diary = updatedDiary;
-    //       $state.go('editDiary', {id: updatedDiary._id});
-    //     });
-    //   }
-    // }
+      DiaryResource.get({id: $stateParams.id}).$promise.then(function(jsonDiary) {
+      vm.diary = jsonDiary;
+      });
+      function editDiary() {
+        DiaryResource.update({id: vm.diary._id}, vm.diary).$promise.then(function(updatedDiary) {
+          vm.diary = updatedDiary;
+          $state.go('diaryEdit', {id: updatedDiary._id});
+        });
+      }
+    }
 
 })();

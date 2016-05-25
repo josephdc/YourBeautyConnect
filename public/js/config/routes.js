@@ -11,13 +11,22 @@
           templateUrl: 'home.html'
         })
 
-        // .state('diaryList', {
-        //   url:          "/diary/list",
-        //   templateUrl:  "js/diaries/diary-list.html",
-        //   controller:   'NewDiary',
-        //   controllerAs: 'NewDiaryVm'
-        // })
+        //New User login
+        .state("userShow", {
+        url:            "/user/show/:id",
+        templateUrl:    "js/users/user-show.html",
+        controller:     "UserShowController",
+        controllerAs:   "userShowVm"
+        })
 
+        .state("userEdit", {
+        url:         "/user/edit/:id",
+        templateUrl: "js/users/user-edit.html",
+        controller:  "UserEditController",
+        controllerAs: "editUserVm"
+        })
+
+        //User Diary
         .state("diaryShow", {
         url:            "/diary/show/:id",
         templateUrl:    "js/diaries/diary-show.html",
@@ -32,12 +41,12 @@
           controllerAs: "newDiaryVm"
         })
 
-        //  .state('diaryEdit', {
-        //     url:         "/diaries/new",
-        //     templateUrl: "js/diaries/diary-edit.html",
-        //     controller:  'EditDiary'
-        //     controllerAs: ""
-        // })
+         .state("diaryEdit", {
+            url:         "/diary/edit/:id",
+            templateUrl: "js/diaries/diary-edit.html",
+            controller:  "DiaryEditController",
+            controllerAs: "editDiaryVm"
+        })
 
           .state("signin", {
             url:          "/signin",

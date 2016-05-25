@@ -13,19 +13,16 @@ router.route('/api/diaries')
 
 router.route('/api/diaries/:id')
   .get(token.authenticate, diariesController.show)
-  .put(token.authenticate, diariesController.update)
-  .delete(token.authenticate, diariesController.destroy);
+  .put(token.authenticate, diariesController.update);
 
 // No need for authentication when creating a user
 router.route('/api/users')
   .post(usersCtrl.create);
 
 router.route('/api/users/:id')
+  .get(token.authenticate, usersCtrl.me)
   .put(token.authenticate, usersCtrl.update)
   .delete(token.authenticate, usersCtrl.destroy);
-
-router.route('/api/users/me')
-  .get(token.authenticate, usersCtrl.me);
 
 // Can't authenticate until they sign-in
 router.route('/api/token')
