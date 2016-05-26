@@ -1,4 +1,5 @@
 var Diary = require('../models/diary');
+var User = require('../models/user');
 
 module.exports = {
   index:   index,
@@ -29,9 +30,13 @@ function show(req, res, next) {
 function create(req, res, next) {
   var newDiary = new Diary(req.body);
 
+  newDiary.userId = req.decoded._id;
   newDiary.save(function(err, savedDiary) {
     if (err) next(err);
-
+    User.findById(req.decoded._id, function(err, user) {
+      user.diaryId = savedDiary._id;
+      user.save();
+    });
     res.json(savedDiary);
   });
 

@@ -16,6 +16,8 @@ function extractPayload(user, options) {
  return {
   userName: user.userName,
   _id: user._id,
+  diaryId: user.diaryId,
+
   use: ['diaries']
  };
 }

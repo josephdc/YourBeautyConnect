@@ -15,6 +15,12 @@ function create(req, res, next) {
   User
     .create(req.body)
     .then(function(user) {
+      var diary = {
+
+      }
+      // save diary
+
+      // stick this part inside the save diary callback
       res.json({
         success: true,
         message: 'Successfully created user name.',

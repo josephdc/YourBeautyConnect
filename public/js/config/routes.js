@@ -11,26 +11,31 @@
           templateUrl: 'home.html'
         })
 
+        .state('choose', {
+          url: '/choose',
+          templateUrl: 'js/choose/choose.html',
+          controller:  'ChooseController',
+          controllerAs: 'chooseVm'
+        })
+
+        .state('about', {
+          url: '/about',
+          templateUrl: 'about.html'
+        })
+
         //New User login
         .state("userShow", {
-        url:            "/user/show/:id",
-        templateUrl:    "js/users/user-show.html",
-        controller:     "UserShowController",
-        controllerAs:   "userShowVm"
+        url:           "/user/show/:id",
+        templateUrl:   "js/users/user-show.html",
+        controller:    "UserShowController",
+        controllerAs:  "userShowVm"
         })
 
         .state("userEdit", {
         url:           "/user/edit/:id",
-        templateUrl:  "js/users/user-edit.html",
-        controller:   "UserEditController",
-        controllerAs: "editUserVm"
-        })
-
-        .state("userDelete", {
-        url:           "/user/delete/:id",
-        templateUrl:   "js/users/user-delete.html",
-        controller:    "UserDeleteController",
-        controllerAs:  "deleteUserVm"
+        templateUrl:   "js/users/user-edit.html",
+        controller:    "UserEditController",
+        controllerAs:  "editUserVm"
         })
 
 

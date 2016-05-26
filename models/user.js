@@ -10,7 +10,11 @@ var userSchema = new mongoose.Schema({
   favBrand1:   { type:String },
   favBrand2:   { type:String },
   favBrand3:   { type:String },
-  favBrand4:   { type:String }
+  favBrand4:   { type:String },
+  diaryId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Diary'
+          }
 });
 
 userSchema.plugin(require('mongoose-bcrypt'));

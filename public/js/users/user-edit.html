@@ -26,8 +26,14 @@
     </div>
 
     <input type="submit" value="Edit"></input>
-    <a ng-click="userShowVm.delete(user)">Delete Profile</a>
+
+    <div>
+    <button ui-sref="diaryShow({id:chooseVm.currentUser.diaryId})">My Beauty Diary</button>
+    </div>
+
   <hr>
   </form>
+  <button ng-click="editUserVm.deleteUser(user)">Delete Profile</button>
+
 </div>
 

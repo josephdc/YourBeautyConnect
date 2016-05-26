@@ -26,7 +26,10 @@ var diarySchema = new mongoose.Schema({
     lips:   categorySchema,
     cheeks: categorySchema,
     tools:  toolSchema,
-    user_id: String,
+    userId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User'
+          }
 });
 
 var Diary = mongoose.model('Diary', diarySchema)

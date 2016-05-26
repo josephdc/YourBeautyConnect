@@ -28,7 +28,7 @@
           // on success
           function(decodedToken) {
             $log.info('Logged in!', decodedToken);
-            $state.go('userEdit');
+            $state.go('diaryNew');
           },
           // on error
           function(err) {
@@ -45,7 +45,7 @@
           // on success
           function(decodedToken) {
             $log.info('Logged in!', decodedToken);
-            $state.go('home');
+            $state.go('choose');
           },
           // on error
           function(err) {
