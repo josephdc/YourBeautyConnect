@@ -1,4 +1,107 @@
- <h1>My Beauty Diary</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="stylesheet/diaryShow.css">
+  <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<ul class="nav">
+    <li class="dropdown">
+        <a class="icon-key icon-white" data-toggle="dropdown" href="#" style=
+        "font-weight: bold"></a>
+
+        <div class="dropdown-menu" style="margin-left: 2em">
+            <ul class="dropdown-menu">
+                <!-- static non-scrollable menu header 1 -->
+            </ul>
+        </div>
+
+        <div class="dropdown-menu" style="margin-left: 2em">
+            <ul class="dropdown-menu">
+                <li class="disabled">
+                    <a href="#"><i class="icon-group"></i> <b>My Groups</b></a>
+                </li>
+
+                <li>
+                    <div class="dropdown-menu scroll-menu scroll-menu-2x"
+                    style="margin-left: 2em">
+                        <ul class="dropdown-menu scroll-menu scroll-menu-2x">
+                            <li>
+                                <a href="#">User</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Administrators</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Some Other Group</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="dropdown-menu scroll-menu scroll-menu-2x">
+                        <!-- Additional menu items omitted for brevity -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown-menu" style="margin-left: 2em">
+            <ul class="dropdown-menu">
+                <!-- static non-scrollable menu header 2 -->
+            </ul>
+        </div>
+
+        <div class="dropdown-menu" style="margin-left: 2em">
+            <ul class="dropdown-menu">
+                <li class="disabled">
+                    <a href="#"><i class="icon-user"></i> <b>My Roles</b></a>
+                </li>
+
+                <li>
+                    <div class="dropdown-menu scroll-menu scroll-menu-2x"
+                    style="margin-left: 2em">
+                        <ul class="dropdown-menu scroll-menu scroll-menu-2x">
+                            <li>
+                                <a href="#">Core Users</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Some Other Role</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="dropdown-menu scroll-menu scroll-menu-2x">
+                        <!-- Additional menu items omitted for brevity -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown-menu" style="margin-left: 2em">
+            <ul class="dropdown-menu">
+                <!-- static non-scrollable menu footer -->
+            </ul>
+        </div>
+
+        <ul class="dropdown-menu">
+            <li class="disabled">
+                <a href="#"><i class="icon-chevron-up pull-left"></i> <i class="icon-chevron-up pull-right"></i></a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h1>My Beauty Diary</h1>
 
 <h3>Skin</h3>
 <p>Brand Name:   {{diaryShowVm.diary.skin.brandName}}
@@ -32,3 +135,9 @@
 
 
 <button ui-sref="diaryEdit({id:diaryShowVm.diary._id})">Edit My Beauty Diary</button>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,28 @@
+
+body {
+  background-image: url(images/ybc.png);
+  padding-top: 15%;
+
+}
+
+p {
+  font-size: 90px;
+  text-align: center;
+  font-family: 'Knewave', cursive;
+  line-height: 62px;
+  margin-bottom: 100px;
+  margin-top: 25px;
+  color: red;
+  text-shadow: 2px 2px black;
+}
+
+.btn {
+  color: red;
+  background-color: black;
+  width: 25%;
+  height: 15%;
+  font-family: 'Knewave', cursive;
+  margin-left: 350px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}

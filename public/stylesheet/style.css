@@ -1,0 +1,14 @@
+body {
+  padding: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: pink;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.sign-in-form {
+  background-color: rgba(251, 112, 167, 0.8);
+  text-align: center;
+}

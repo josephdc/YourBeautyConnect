@@ -1,8 +1,11 @@
+
 <div class="sign-in-form" ng-hide="vm.toggleValue">
+
   <h3>Welcome to</h3>
   <h1>Your Beauty Connect</h1>
 
   <form ng-submit="vm.submitLogIn();" name="signInForm" novalidate>
+
     <div class="form-group">
       <label for="exampleInputEmail1"></label>
       <input ng-model="vm.logIn.userName" type="UserName" ng-model="userName" name="User Name" required class="form-control" id="exampleInputUserName" placeholder="User Name">
@@ -12,6 +15,7 @@
       <input ng-model="vm.logIn.password" type="password" ng-model="password" name="password" required class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
     <button type="submit" ng-disabled="signInForm.$invalid" class="btn btn-default">Submit</button>
+
   </form>
 
   <p>
