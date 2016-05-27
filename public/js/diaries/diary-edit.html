@@ -1,5 +1,13 @@
+<head>
+  <link rel="stylesheet" href="stylesheet/diaryEdit.css">
+  <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+</head>
+
+    <div class="editDiary">
+    <h3>Edit Diary</h3>
+    </div>
+
 <div>
-  <h3>Edit Diary</h3>
   <form id='edit-diary' ng-submit="editDiaryVm.editDiary()">
     <div>
       <label for="category">Skin</label>
@@ -47,10 +55,10 @@
 
   </form>
 
-
-
-    <div>
+    <div class="diaryShowBtn">
     <button ui-sref="diaryShow({id:editDiaryVm.diary._id})">My Beauty Diary</button>
     </div>
 
 </div>
+</body>
+</html>

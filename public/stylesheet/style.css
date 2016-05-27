@@ -1,7 +1,7 @@
 body {
   padding: 100px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: pink;
+  /*background: url(/images/homePage.png) no-repeat center;*/
 }
 
 a {
@@ -20,9 +20,19 @@ h1 {
 
 }
 
-
 h3 {
   font-size: 20px;
   text-align: center;
 }
 
+#user-input {
+  background-color: white;
+}
+
+#nav {
+  margin-left: 350px;
+}
+
+.navbar {
+  background-color: pink ;
+}

@@ -1,5 +1,12 @@
+<head>
+  <link rel="stylesheet" href="stylesheet/userShow.css">
+  <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
 <h1>My Beauty Profile</h1>
 
+<div class="profile-content">
 <p>{{userShowVm.user.firstName  }}</p>
 <p>{{userShowVm.user.lastName   }}</p>
 <p>{{userShowVm.user.userName   }}</p>
@@ -9,7 +16,12 @@
 <p>{{userShowVm.user.favBrand2  }}</p>
 <p>{{userShowVm.user.favBrand3  }}</p>
 <p>{{userShowVm.user.favBrand4  }}</p>
+</div>
 
+</body>
+</html>
+
+<div class="nav-btns">
 <button ui-sref="userEdit({id:userShowVm.user._id})">Edit My Beauty Profile</button>
 
 <div>
@@ -18,4 +30,5 @@
 
 <div>
 <button ui-sref="about">About</button>
+</div>
 </div>

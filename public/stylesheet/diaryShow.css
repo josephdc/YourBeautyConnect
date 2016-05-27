@@ -1,36 +1,64 @@
+h1 {
+  font-size: 80px;
+  color: white;
+  background-color: lightpink;
+  padding-bottom: 15px;
+}
+
+
+h3 {
+  font-size: 140px;
+  color: white;
+  opacity: .8;
+  padding-top: 70px;
+}
+
 .diary-show {
   color: pink;
   text-align: center;
-  font-size: 40px;
   padding-top: 60px;
 }
 
 .diary-skin {
-  background-color: grey;
+  background: url(/images/skinImage.jpg) no-repeat center;
   text-align: center;
+  margin-bottom: -22px;
+  margin-top: -20px;
 }
 
 .diary-face {
-  background-color: lightgrey;
+  background: url(/images/faceImage.jpg) no-repeat center;
   text-align: center;
 }
 
 .diary-eyes {
-  background-color: grey;
+  background: url(/images/eyeImage.jpg) no-repeat center;
   text-align: center;
 }
 
 .diary-lips {
-  background-color: lightgrey;
+  background: url(/images/Lips.jpg) no-repeat center;
   text-align: center;
 }
 
 .diary-cheeks {
-  background-color: grey;
+  background: url(/images/cheeksImage.jpg) no-repeat center;
   text-align: center;
+  margin-top: -22px;
 }
 
 .diary-tools {
-  background-color: lightgrey;
+  background: url(/images/toolsImage.jpg) no-repeat center;
   text-align: center;
+  margin-top: -22px;
 }
+
+.form-control {
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+  font-size: 25px;
+  background-color: rgba(166, 166, 166, 0.58);
+
+}
+

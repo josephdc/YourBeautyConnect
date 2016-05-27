@@ -1,11 +1,11 @@
 
 body {
-  background-image: url(images/ybc.png);
-  padding-top: 15%;
-
+  background: url(/images/choosePage1.jpg) no-repeat center;
+  background-color: black;
+  margin: 125px;
 }
 
-p {
+/*p {
   font-size: 90px;
   text-align: center;
   font-family: 'Knewave', cursive;
@@ -14,27 +14,36 @@ p {
   margin-top: 25px;
   color: pink;
   text-shadow: 2px 2px lightgrey;
-}
+}*/
 
 .btn {
-  color: white;
-  background-color: pink;
-  width: 25%;
+  color: black;
+  background-color: white;
+  opacity: .6;
+  width: 7%;
   height: 15%;
-  font-family: 'Knewave', cursive;
-  margin-top: 20px;
-  letter-spacing: 1px;
+  margin-top: 5px;
+  letter-spacing: 6px;
   text-align: center;
 }
 
-#nav {
-  margin-left: 350px;
+.ybcName {
+  text-align: center;
+  background-color: rgba(156, 156, 156, 0.58);
+  width: 25%;
+  margin-left: 37%;
+  height: 150px;
+  padding-top: 1px;
+  /*border: grey solid 2px;*/
+  color: white;
 }
+
 
 #home-btn {
   text-align: center;
   width: 50%;
   transform: translate(50%, 50%);
+  padding: 25px;
 }
 
 #centered-column {

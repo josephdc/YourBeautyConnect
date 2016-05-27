@@ -28,7 +28,6 @@
       vm.deleteUser = deleteUser;
       vm.currentUser = authService.loggedInUser();
 
-
       UserResource.get({id: $stateParams.id}).$promise.then(function(resp) {
         console.log(resp.data)
         vm.user = resp.data;
@@ -48,9 +47,5 @@
         });
       }
     }
-
-
-
-
 
 })();

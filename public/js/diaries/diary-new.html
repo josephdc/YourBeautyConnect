@@ -1,50 +1,61 @@
- <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
-<h3>Build Your "BEAUTY DIARY"</h3>
-<div>
 
+<head>
+  <link rel="stylesheet" href="stylesheet/diary-new.css">
+  <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+</head>
+<body>
+
+<div class="newDiary"
+<p>Build Your "BEAUTY DIARY"</p>
+</div>
+
+<div class="diaryInput">
   <form id='new-diary' ng-submit="newDiaryVm.addDiary()">
     <div>
       <label for="category">Skin:</label>
-      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.skin.brandName">
-      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.skin.productName">
-      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.skin.usedFor">
+      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.skin.brandName", placeholder="Brand Name">
+      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.skin.productName", placeholder="Product Name">
+      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.skin.usedFor", placeholder="Used For">
     </div>
 
     <div>
       <label for="category">Face:</label>
-      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.face.brandName">
-      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.face.productName">
-      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.face.shadeName">
+      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.face.brandName", placeholder="Brand Name">
+      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.face.productName", placeholder="Product Name">
+      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.face.shadeName", placeholder="Shade Name">
     </div>
 
     <div>
       <label for="category">Eyes:</label>
-      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.eyes.brandName">
-      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.eyes.productName">
-      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.eyes.shadeName">
+      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.eyes.brandName", placeholder="Brand Name">
+      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.eyes.productName", placeholder="Product Name">
+      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.eyes.shadeName", placeholder="Shade Name">
     </div>
 
     <div>
       <label for="category">Lips:</label>
-      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.lips.brandName">
-      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.lips.productName">
-      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.lips.shadeName">
+      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.lips.brandName", placeholder="Brand Name">
+      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.lips.productName", placeholder="Product Name">
+      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.lips.shadeName", placeholder="Shade Name">
     </div>
 
     <div>
       <label for="category">Cheeks:</label>
-      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.cheeks.brandName">
-      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.cheeks.productName">
-      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.cheeks.shadeName">
+      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.cheeks.brandName", placeholder="Brand Name">
+      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.cheeks.productName", placeholder="Product Name">
+      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.cheeks.shadeName", placeholder="Shade Name">
     </div>
 
     <div>
       <label for="category">Tools:</label>
-      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.tools.brandName">
-      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.tools.productName">
-      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.tools.shadeName">
+      <input type="text" name="Brand Name"   ng-model="newDiaryVm.newDiary.tools.brandName", placeholder="Brand Name">
+      <input type="text" name="Product Name" ng-model="newDiaryVm.newDiary.tools.productName", placeholder="Product Name">
+      <input type="text" name="Shade Name"   ng-model="newDiaryVm.newDiary.tools.shadeName", placeholder="Used For">
     </div>
 
     <input type="submit" value="Add">
   </form>
 </div>
+</body>
+</html>
