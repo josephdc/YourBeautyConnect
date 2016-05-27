@@ -3,28 +3,35 @@
       .controller("UserShowController", UserShowController)
       .controller("UserEditController", UserEditController);
 
-      UserShowController.$inject = ['UserResource', '$stateParams'];
-      UserEditController.$inject = ['UserResource', '$stateParams', '$state'];
+      UserShowController.$inject = ['UserResource', '$stateParams', "authService"];
+      UserEditController.$inject = ['UserResource', '$stateParams', '$state', "authService"];
 
-    function UserShowController(UserResource, $stateParams) {
+    function UserShowController(UserResource, $stateParams, authService) {
       var vm = this;
       vm.user = {};
+      vm.currentUser = authService.loggedInUser();
+      console.log("the user is " + vm.currentUser._id)
+      console.log(vm.currentUser);
 
       UserResource.get({id: $stateParams.id}).$promise.then(function(resp) {
         vm.user = resp.data;
+        console.log("new vm.user is " + vm.currentUser._id)
+        console.log(vm.user)
       });
 
     }
 
-    function UserEditController(UserResource, $stateParams, $state) {
+    function UserEditController(UserResource, $stateParams, $state, authService) {
       var vm = this;
       vm.user = {};
       vm.editUser = editUser;
       vm.deleteUser = deleteUser;
+      vm.currentUser = authService.loggedInUser();
+
 
       UserResource.get({id: $stateParams.id}).$promise.then(function(resp) {
         console.log(resp.data)
-      vm.user = resp.data;
+        vm.user = resp.data;
       });
 
       function editUser() {

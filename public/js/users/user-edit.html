@@ -27,12 +27,12 @@
 
     <input type="submit" value="Update"></input>
 
-    <div>
-    <button ui-sref="userShow({id:chooseVm.currentUser.diaryId})">My Beauty Diary</button>
+
     </div>
 
   <hr>
   </form>
+    <button ui-sref="userShow({id:editUserVm.currentUser._id})">My Beauty Diary</button>
   <button ng-click="editUserVm.deleteUser(user)">Delete Profile</button>
 
 </div>

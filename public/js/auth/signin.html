@@ -1,8 +1,10 @@
+<link rel="stylesheet" href="stylesheet/style.css">
+
+
+<h3>Welcome to</h3>
+<h1>Your Beauty Connect</h1>
 
 <div class="sign-in-form" ng-hide="vm.toggleValue">
-
-  <h3>Welcome to</h3>
-  <h1>Your Beauty Connect</h1>
 
   <form ng-submit="vm.submitLogIn();" name="signInForm" novalidate>
 
@@ -10,6 +12,7 @@
       <label for="exampleInputEmail1"></label>
       <input ng-model="vm.logIn.userName" type="UserName" ng-model="userName" name="User Name" required class="form-control" id="exampleInputUserName" placeholder="User Name">
     </div>
+
     <div class="form-group">
       <label for="exampleInputPassword1"></label>
       <input ng-model="vm.logIn.password" type="password" ng-model="password" name="password" required class="form-control" id="exampleInputPassword1" placeholder="Password">

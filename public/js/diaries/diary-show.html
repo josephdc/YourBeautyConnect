@@ -1,140 +1,57 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
   <link rel="stylesheet" href="stylesheet/diaryShow.css">
   <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<ul class="nav">
-    <li class="dropdown">
-        <a class="icon-key icon-white" data-toggle="dropdown" href="#" style=
-        "font-weight: bold"></a>
 
-        <div class="dropdown-menu" style="margin-left: 2em">
-            <ul class="dropdown-menu">
-                <!-- static non-scrollable menu header 1 -->
-            </ul>
-        </div>
-
-        <div class="dropdown-menu" style="margin-left: 2em">
-            <ul class="dropdown-menu">
-                <li class="disabled">
-                    <a href="#"><i class="icon-group"></i> <b>My Groups</b></a>
-                </li>
-
-                <li>
-                    <div class="dropdown-menu scroll-menu scroll-menu-2x"
-                    style="margin-left: 2em">
-                        <ul class="dropdown-menu scroll-menu scroll-menu-2x">
-                            <li>
-                                <a href="#">User</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Administrators</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Some Other Group</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <ul class="dropdown-menu scroll-menu scroll-menu-2x">
-                        <!-- Additional menu items omitted for brevity -->
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="dropdown-menu" style="margin-left: 2em">
-            <ul class="dropdown-menu">
-                <!-- static non-scrollable menu header 2 -->
-            </ul>
-        </div>
-
-        <div class="dropdown-menu" style="margin-left: 2em">
-            <ul class="dropdown-menu">
-                <li class="disabled">
-                    <a href="#"><i class="icon-user"></i> <b>My Roles</b></a>
-                </li>
-
-                <li>
-                    <div class="dropdown-menu scroll-menu scroll-menu-2x"
-                    style="margin-left: 2em">
-                        <ul class="dropdown-menu scroll-menu scroll-menu-2x">
-                            <li>
-                                <a href="#">Core Users</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Admin</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Some Other Role</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <ul class="dropdown-menu scroll-menu scroll-menu-2x">
-                        <!-- Additional menu items omitted for brevity -->
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="dropdown-menu" style="margin-left: 2em">
-            <ul class="dropdown-menu">
-                <!-- static non-scrollable menu footer -->
-            </ul>
-        </div>
-
-        <ul class="dropdown-menu">
-            <li class="disabled">
-                <a href="#"><i class="icon-chevron-up pull-left"></i> <i class="icon-chevron-up pull-right"></i></a>
-            </li>
-        </ul>
-    </li>
-</ul>
-
+<div class="diary-show">
 <h1>My Beauty Diary</h1>
+</div>
 
-<h3>Skin</h3>
-<p>Brand Name:   {{diaryShowVm.diary.skin.brandName}}
-   Product Name: {{diaryShowVm.diary.skin.productName}}
-   Used For:     {{diaryShowVm.diary.skin.usedFor}}</p>
+   <div class="diary-skin">
+   <h3>Skin</h3>
+   <p>Brand Name:   {{diaryShowVm.diary.skin.brandName}}</p>
+   <p>Product Name: {{diaryShowVm.diary.skin.productName}}</p>
+   <p>Used For:     {{diaryShowVm.diary.skin.usedFor}}</p>
+   </div>
 
-<h3>Face</h3>
-<p>Brand Name:   {{diaryShowVm.diary.face.brandName}}
-   Product Name: {{diaryShowVm.diary.face.productName}}
-   Shade Name:   {{diaryShowVm.diary.face.shadeName}}</p>
+   <div class="diary-face">
+   <h3>Face</h3>
+   <p>Brand Name:   {{diaryShowVm.diary.face.brandName}}</p>
+   <p>Product Name: {{diaryShowVm.diary.face.productName}}</p>
+   <p>Used For:     {{diaryShowVm.diary.face.usedFor}}</p>
+   </div>
 
-<h3>Eyes</h3>
-<p>Brand Name:   {{diaryShowVm.diary.eyes.brandName}}
-   Product Name: {{diaryShowVm.diary.eyes.productName}}
-   Shade Name:   {{diaryShowVm.diary.eyes.shadeName}}</p>
+    <div class="diary-eyes">
+    <h3>Eyes</h3>
+    <p>Brand Name:   {{diaryShowVm.diary.eyes.brandName}}</p>
+    <p>Product Name: {{diaryShowVm.diary.eyes.productName}}</p>
+    <p>Shade Name:   {{diaryShowVm.diary.eyes.shadeName}}</p>
+    </div>
 
+<div class="diary-lips">
 <h3>Lips</h3>
-<p>Brand Name:   {{diaryShowVm.diary.lips.brandName}}
-   Product Name: {{diaryShowVm.diary.lips.productName}}
-   Shade Name:   {{diaryShowVm.diary.lips.shadeName}}</p>
+<p>Brand Name:   {{diaryShowVm.diary.lips.brandName}}</p>
+<p>Product Name: {{diaryShowVm.diary.lips.productName}}</p>
+<p>Shade Name:   {{diaryShowVm.diary.lips.shadeName}}</p>
+</div>
 
+<div class="diary-cheeks">
 <h3>Cheeks</h3>
-<p>Brand Name:   {{diaryShowVm.diary.cheeks.brandName}}
-   Product Name: {{diaryShowVm.diary.cheeks.productName}}
-   Shade Name:   {{diaryShowVm.diary.cheeks.shadeName}}</p>
+<p>Brand Name:   {{diaryShowVm.diary.cheeks.brandName}}</p>
+<p>Product Name: {{diaryShowVm.diary.cheeks.productName}}</p>
+<p>Shade Name:   {{diaryShowVm.diary.cheeks.shadeName}}</p>
+</div>
 
+<div class="diary-tools">
 <h3>Tools</h3>
-<p>Brand Name:   {{diaryShowVm.diary.tools.brandName}}
-   Product Name: {{diaryShowVm.diary.tools.productName}}
-   Used For:     {{diaryShowVm.diary.tools.usedFor}}</p>
-
+<p>Brand Name:   {{diaryShowVm.diary.tools.brandName}}</p>
+<p>Product Name: {{diaryShowVm.diary.tools.productName}}</p>
+<p>Used For:     {{diaryShowVm.diary.tools.usedFor}}</p>
+</div>
 
 <button ui-sref="diaryEdit({id:diaryShowVm.diary._id})">Edit My Beauty Diary</button>
+<button ui-sref="userShow({id:diaryShowVm.currentUser._id})">BEAUTY PROFILE</button>
 
 </body>
 </html>

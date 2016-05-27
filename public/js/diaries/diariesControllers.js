@@ -4,13 +4,15 @@
        .controller("NewDiaryController", NewDiaryController)
        .controller("DiaryEditController", DiaryEditController)
 
-       DiaryShowController.$inject = ['DiaryResource', '$stateParams'];
+       DiaryShowController.$inject = ['DiaryResource', '$stateParams', "authService"];
        NewDiaryController.$inject = ['DiaryResource', '$state'];
        DiaryEditController.$inject = ['DiaryResource', '$stateParams', '$state'];
 
-    function DiaryShowController(DiaryResource, $stateParams) {
+    function DiaryShowController(DiaryResource, $stateParams, authService) {
       var vm = this;
       vm.diary = {};
+      vm.currentUser = authService.loggedInUser();
+
       console.log($stateParams.id)
       DiaryResource.get({id: $stateParams.id}).$promise.then(function(resp) {
           // console.log(jsonDiary)

@@ -1,5 +1,36 @@
-h1 {
-  font-family: 'Knewave', cursive;
-  color: red;
+.diary-show {
+  color: pink;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+.diary-skin {
+  background-color: grey;
+  text-align: center;
+}
+
+.diary-face {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.diary-eyes {
+  background-color: grey;
+  text-align: center;
+}
+
+.diary-lips {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.diary-cheeks {
+  background-color: grey;
+  text-align: center;
+}
+
+.diary-tools {
+  background-color: lightgrey;
   text-align: center;
 }
