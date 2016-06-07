@@ -1,38 +1,52 @@
 body {
-  padding: 100px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /*background: url(/images/homePage.png) no-repeat center;*/
-}
+  background-color: pink;
+  border: white solid 75px;
+  padding-bottom: 125px;
+  margin: 5%;}
 
 a {
-  color: #00B7FF;
-}
+  color: white;}
 
-.sign-in-form {
+.form-control {
   width: 30%;
-  margin-left: 37%;
-  text-align: center;
-  }
+  margin-left: 35%;}
+
+.btn {
+  background-color: white;
+  color: pink;
+  border: none;
+  margin-left: 45%;
+  margin-top: 1%;}
+
+.btn:hover {
+  background-color: pink;
+  color: white;
+  border: none;}
 
 h1 {
-  font-size: 45px;
+  font-size: 80px;
   text-align: center;
+  color: grey;
+  margin-top: -3%;}
 
-}
+h2 {
+  text-align: center;
+  color: white;}
 
 h3 {
-  font-size: 20px;
-  text-align: center;
-}
+  font-size: 30px;
+  color: grey;
+  margin-left: 70px;
+  margin-bottom: 15px;}
 
-#user-input {
-  background-color: white;
-}
+p {
+  text-align: center;
+  color: grey;}
 
 #nav {
   margin-left: 350px;
 }
 
 .navbar {
-  background-color: pink ;
-}
+  display: none;}

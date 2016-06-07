@@ -1,67 +1,65 @@
 
 body {
-  background: url(/images/choosePage1.jpg) no-repeat center;
   background-color: black;
-  margin: 125px;
+  background: url(/images/choosePage1.jpg) no-repeat fixed center;
+  background-size: cover;
+  background-position: 1% 90%;
 }
 
-/*p {
-  font-size: 90px;
-  text-align: center;
-  font-family: 'Knewave', cursive;
-  line-height: 62px;
-  margin-bottom: 100px;
-  margin-top: 25px;
-  color: pink;
-  text-shadow: 2px 2px lightgrey;
-}*/
+.navbar {
+  background-color: transparent;
+  border: none;
+}
+
+img {
+    width: 1293px;
+    margin-top: -109px;
+    margin-left: -25px;
+    margin-bottom: -706px;
+    display: block;
+}
 
 .btn {
   color: black;
   background-color: white;
   opacity: .6;
-  width: 7%;
-  height: 15%;
-  margin-top: 5px;
+}
+
+.btns {
+  color: black;
+  background-color: white;
+  opacity: .6;
+  border: silver solid 5px;
   letter-spacing: 6px;
-  text-align: center;
+  margin: 1%;
+  height: 80px;
+  width: 35%;
+  margin-left: 435px;
 }
 
 .ybcName {
   text-align: center;
-  background-color: rgba(156, 156, 156, 0.58);
-  width: 25%;
-  margin-left: 37%;
-  height: 150px;
-  padding-top: 1px;
-  /*border: grey solid 2px;*/
+  width: 100%;
+  padding-top: 60px;
   color: white;
+  font-size: 100px;
 }
 
 
-#home-btn {
+
+/*@media screen and (min-width: 375px max-width: 667px) {
+
+body {
   text-align: center;
-  width: 50%;
-  transform: translate(50%, 50%);
-  padding: 25px;
+}
+img {
+  width: 48%;
+  margin-top: -95%;
 }
 
-#centered-column {
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+.btns {
+  margin: 0px;
 }
 
-/*Breakpoint: ~487px*/
-@media(max-width: 487px) {
-
-  /*When screen is less than 487px wide (stuff starts looking weird),
-  do the following: */
-  #centered-column {
-    top: 20%;
-    left: 20%;
-  }
 }
+*/

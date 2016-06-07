@@ -4,31 +4,44 @@
 </head>
 <body>
 
-<h1>My Beauty Profile</h1>
+<h1>MY BEAUTY PROFILE</h1>
+
+    <button id="btns1" class="btn btn-default" ui-sref="diaryShow({id:userShowVm.user.diaryId})">BACK TO MY BEAUTY DIARY</button>
 
 <div class="profile-content">
-<p>{{userShowVm.user.firstName  }}</p>
-<p>{{userShowVm.user.lastName   }}</p>
-<p>{{userShowVm.user.userName   }}</p>
-<p>{{userShowVm.user.email      }}</p>
-<p>{{userShowVm.user.birthday   }}</p>
-<p>{{userShowVm.user.favBrand1  }}</p>
-<p>{{userShowVm.user.favBrand2  }}</p>
-<p>{{userShowVm.user.favBrand3  }}</p>
-<p>{{userShowVm.user.favBrand4  }}</p>
+
+    <label id="FN" for="FN">FIRST NAME:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.firstName  }}</text>
+
+    <label id="FN" for="FN">LAST NAME:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.lastName   }}</text>
+
+    <label id="FN" for="FN">USER NAME:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.userName   }}</text>
+
+    <label id="FN" for="FN">EMAIL:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.email      }}</text>
+
+    <label id="FN" for="FN">BIRTHDAY:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.birthday   }}</text>
+
+    <label id="FN" for="FN">LOVE BRAND:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.favBrand1  }}</text>
+
+    <label id="FN" for="FN">LOVE BRAND:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.favBrand2  }}</text>
+
+    <label id="FN" for="FN">LOVE BRAND:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.favBrand3  }}</text>
+
+    <label id="FN" for="FN">LOVE BRAND:</label>
+        <text class="form-control" rows="3">  {{userShowVm.user.favBrand4  }}</text>
 </div>
 
 </body>
 </html>
 
-<div class="nav-btns">
-<button ui-sref="userEdit({id:userShowVm.user._id})">Edit My Beauty Profile</button>
+    <button id="btns2" class="btn btn-default" ui-sref="userEdit({id:userShowVm.user._id})">UPDATE MY BEAUTY PROFILE</button>
 
-<div>
-<button ui-sref="diaryShow({id:userShowVm.user.diaryId})">My Beauty Diary</button>
-</div>
-
-<div>
-<button ui-sref="about">About</button>
 </div>
 </div>

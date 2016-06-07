@@ -1,12 +1,85 @@
+body {
+  background-color: white;
+  border: pink solid 200px;
+  margin-top: -150px;
+  margin-bottom: -200px;
+}
+
+.navbar {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+}
+
+.navbar-btn {
+  color: white;
+  background-color: pink;
+  border: none;
+}
+
+.navbar-btn:hover {
+  background-color: white;
+  color: pink;
+}
+
 .editProfile {
-  margin-top: 80px;
+  margin-top: 25px;
   text-align: center;
 }
 
-#edit-user {
-  text-align: center;
+#btns1 {
+  margin-left: 305px;
+  margin-bottom: 1%;
+  background-color: white;
+  color: pink;
+  border: pink solid 1px;
 }
 
-.userBtns {
-  text-align: center;
+#btns1:hover {
+  background-color: pink;
+  color: white;
+  border: white solid 1px;
 }
+
+#btns2 {
+  background-color: white;
+  color: pink;
+  border: pink solid 1px;
+  margin-left: 40%;
+}
+
+#btns2:hover {
+  background-color: pink;
+  color: white;
+  border: white solid 1px;
+}
+
+#btns3 {
+  background-color: white;
+  color: pink;
+  border: pink solid 1px;
+  margin-left: 41%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+#btns3:hover {
+  background-color: pink;
+  color: white;
+  border: white solid 1px;
+}
+
+.form-control {
+  width: 25%;
+  margin: .5%;
+  margin-left: 293px;
+  margin-top: -7px;
+}
+
+#FN {
+  font-size: 12px;
+  margin-right: 240px;
+  opacity: .4;
+  margin-left: 295px;
+}
+

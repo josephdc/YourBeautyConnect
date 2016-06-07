@@ -1,10 +1,27 @@
-h1 {
-  font-size: 80px;
-  color: white;
-  background-color: lightpink;
-  padding-bottom: 15px;
+.navbar {
+  background-color: transparent;
+  border: none;
+  position: absolute;
 }
 
+.navbar-btn {
+  color: white;
+  background-color: pink;
+  border: none;
+}
+
+.navbar-btn:hover {
+  background-color: white;
+  color: pink;
+}
+
+h1 {
+  font-size: 80px;
+  color: pink;
+  background-color: white;
+  padding-bottom: 18px;
+  margin-top: 0px;
+}
 
 h3 {
   font-size: 140px;
@@ -13,15 +30,43 @@ h3 {
   padding-top: 70px;
 }
 
+#brs-btn1 {
+  margin-top: 60px;
+  margin-left: 50%;
+  color: pink;
+  border: solid pink 1px;
+  background-color: white;
+}
+
+#brs-btn1:hover {
+  background-color: pink;
+  color: white;
+}
+
+#brs-btn2 {
+  margin-top: -55px;
+  margin-left: 35%;
+  color: pink;
+  border: solid pink 1px;
+  background-color: white;
+}
+
+#brs-btn2:hover {
+  background-color: pink;
+  color: white;
+  border: pink;
+}
+
 .diary-show {
   color: pink;
   text-align: center;
-  padding-top: 60px;
 }
 
 .diary-skin {
   background: url(/images/skinImage.jpg) no-repeat center;
   text-align: center;
+  background-size: 100%;
+  background-position: 0% 40%
   margin-bottom: -22px;
   margin-top: -20px;
 }
@@ -29,36 +74,47 @@ h3 {
 .diary-face {
   background: url(/images/faceImage.jpg) no-repeat center;
   text-align: center;
+  background-size: 100%;
+  background-position: 1% 44%;
+  padding-top: 1px;
 }
 
 .diary-eyes {
-  background: url(/images/eyeImage.jpg) no-repeat center;
+  background: url(/images/smokey-eyes-2.jpg) no-repeat center;
+  background-size: 100%;
+  background-position: 1% 0%;
   text-align: center;
+  padding-top: 1px;
+
 }
 
 .diary-lips {
-  background: url(/images/Lips.jpg) no-repeat center;
+  background: url(/images/LipsEdit.jpg) no-repeat center;
+  background-size: 106%;
+  background-position: 1% 79%;
   text-align: center;
+  margin-top: -20px;
 }
 
 .diary-cheeks {
   background: url(/images/cheeksImage.jpg) no-repeat center;
   text-align: center;
-  margin-top: -22px;
+  margin-top: -20px;
 }
 
 .diary-tools {
   background: url(/images/toolsImage.jpg) no-repeat center;
   text-align: center;
-  margin-top: -22px;
+  margin-top: -20px;
 }
 
 .form-control {
   text-align: center;
   color: white;
-  margin-top: 5%;
   font-size: 25px;
   background-color: rgba(166, 166, 166, 0.58);
-
+  border: none;
+  width: 60%;
+  margin-left: 20%;
 }
 

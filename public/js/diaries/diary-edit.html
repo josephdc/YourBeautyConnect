@@ -1,63 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
 <head>
   <link rel="stylesheet" href="stylesheet/diaryEdit.css">
   <link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
 </head>
 
     <div class="editDiary">
-    <h3>Edit Diary</h3>
+        <h3>Edit My Diary</h3>
     </div>
+
+<button ui-sref="diaryShow({id:editDiaryVm.diary._id})" class="btn btn-default">Back to My Beauty Diary</button>
 
 <div>
   <form id='edit-diary' ng-submit="editDiaryVm.editDiary()">
     <div>
-      <label for="category">Skin</label>
-      <input type="text" name="Brand Name"   ng-model="editDiaryVm.diary.skin.brandName">
-      <input type="text" name="Product Name" ng-model="editDiaryVm.diary.skin.productName">
-      <input type="text" name="Shade Name"   ng-model="editDiaryVm.diary.skin.usedFor">
+      <label for="category">SKIN</label>
+      <input type="text" class="form-control" name="Brand Name"   ng-model="editDiaryVm.diary.skin.brandName" placeholder="Brand Name">
+      <input type="text" class="form-control" name="Product Name" ng-model="editDiaryVm.diary.skin.productName" placeholder="Product Name">
+      <input type="text" class="form-control" name="Shade Name"   ng-model="editDiaryVm.diary.skin.usedFor" placeholder="Used For">
     </div>
 
     <div>
-      <label for="category">Face</label>
-      <input type="text" name="Brand Name"   ng-model="editDiaryVm.diary.face.brandName">
-      <input type="text" name="Product Name" ng-model="editDiaryVm.diary.face.productName">
-      <input type="text" name="Shade Name"   ng-model="editDiaryVm.diary.face.shadeName">
+      <label for="category">FACE</label>
+      <input type="text" class="form-control" name="Brand Name"   ng-model="editDiaryVm.diary.face.brandName" placeholder="Brand Name">
+      <input type="text" class="form-control" name="Product Name" ng-model="editDiaryVm.diary.face.productName" placeholder="Product Name">
+      <input type="text" class="form-control" name="Shade Name"   ng-model="editDiaryVm.diary.face.shadeName" placeholder="Shade Name">
     </div>
 
     <div>
-      <label for="category">Eyes</label>
-      <input type="text" name="Brand Name"   ng-model="editDiaryVm.diary.eyes.brandName">
-      <input type="text" name="Product Name" ng-model="editDiaryVm.diary.eyes.productName">
-      <input type="text" name="Shade Name"   ng-model="editDiaryVm.diary.eyes.shadeName">
+      <label for="category">EYES</label>
+      <input type="text" class="form-control" name="Brand Name"   ng-model="editDiaryVm.diary.eyes.brandName" placeholder="Brand Name">
+      <input type="text" class="form-control" name="Product Name" ng-model="editDiaryVm.diary.eyes.productName" placeholder="Product Name">
+      <input type="text" class="form-control" name="Shade Name"   ng-model="editDiaryVm.diary.eyes.shadeName" placeholder="Shade Name">
     </div>
 
     <div>
-      <label for="category">Lips</label>
-      <input type="text" name="Brand Name"   ng-model="editDiaryVm.diary.lips.brandName">
-      <input type="text" name="Product Name" ng-model="editDiaryVm.diary.lips.productName">
-      <input type="text" name="Shade Name"   ng-model="editDiaryVm.diary.lips.shadeName">
+      <label for="category">LIPS</label>
+      <input type="text" class="form-control" name="Brand Name"   ng-model="editDiaryVm.diary.lips.brandName" placeholder="Brand Name">
+      <input type="text" class="form-control" name="Product Name" ng-model="editDiaryVm.diary.lips.productName" placeholder="Product Name">
+      <input type="text" class="form-control" name="Shade Name"   ng-model="editDiaryVm.diary.lips.shadeName" placeholder="Shade Name">
     </div>
 
     <div>
-      <label for="category">Cheeks</label>
-      <input type="text" name="Brand Name"   ng-model="editDiaryVm.diary.cheeks.brandName">
-      <input type="text" name="Product Name" ng-model="editDiaryVm.diary.cheeks.productName">
-      <input type="text" name="Shade Name"   ng-model="editDiaryVm.diary.cheeks.shadeName">
+      <label for="category">CHEEKS</label>
+      <input type="text" class="form-control" name="Brand Name"   ng-model="editDiaryVm.diary.cheeks.brandName" placeholder="Brand Name">
+      <input type="text" class="form-control" name="Product Name" ng-model="editDiaryVm.diary.cheeks.productName" placeholder="Product Name">
+      <input type="text" class="form-control" name="Shade Name"   ng-model="editDiaryVm.diary.cheeks.shadeName" placeholder="shade Name">
     </div>
 
     <div>
-      <label for="category">Tools</label>
-      <input type="text" name="Brand Name"   ng-model="editDiaryVm.diary.tools.brandName">
-      <input type="text" name="Product Name" ng-model="editDiaryVm.diary.tools.productName">
-      <input type="text" name="Shade Name"   ng-model="editDiaryVm.diary.tools.shadeName">
+      <label for="category">TOOLS</label>
+      <input type="text" class="form-control" name="Brand Name"   ng-model="editDiaryVm.diary.tools.brandName" placeholder="Brand Name">
+      <input type="text" class="form-control" name="Product Name" ng-model="editDiaryVm.diary.tools.productName" placeholder="Product Name">
+      <input type="text" class="form-control" name="Shade Name"   ng-model="editDiaryVm.diary.tools.usedFor" placeholder="Used For">
     </div>
 
-    <input type="submit" value="Update">
-
+    <div class="btns">
+        <button type="submit" class="btn btn-default">Make Changes</button>
+    </div>
   </form>
-
-    <div class="diaryShowBtn">
-    <button ui-sref="diaryShow({id:editDiaryVm.diary._id})">My Beauty Diary</button>
-    </div>
 
 </div>
 </body>

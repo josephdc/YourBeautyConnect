@@ -4,7 +4,48 @@
   font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-
-.diaryInput {
-  text-align: center;
+.navbar-btn {
+  color: white;
+  background-color: pink;
+  border: none;
 }
+
+.navbar-btn:hover {
+  background-color: white;
+  color: pink;
+}
+
+.navbar {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+}
+
+.form-control {
+  width: 35%;
+  margin-left: 33%;
+  margin-top: 1%;
+}
+
+label {
+  margin-left: 33%;
+  font-size: 25px;
+  color: pink;
+}
+
+.btn {
+  margin-left: 46%;
+  margin-top: 1%;
+  width: 8%;
+  margin-bottom: 2%;
+  color: white;
+  background-color: pink;
+  border: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: pink;
+}
+
+

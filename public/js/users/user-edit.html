@@ -4,44 +4,45 @@
 </head>
 <body>
 
-
-<div class="editProfile">
-<h1>My Beauty Profile</h1>
-</div>
-
-<form id='edit-user' ng-submit="editUserVm.editUser()">
-    <div>
-    <input type="text" name="First Name"       ng-model="editUserVm.user.firstName" placeholder="First Name">
-    <input type="text" name="Last Name"        ng-model="editUserVm.user.lastName" placeholder="Last Name">
+    <div class="editProfile">
+      <h1>Edit My Beauty Profile</h1>
     </div>
 
-    <div>
-    <input type="text" name="User Name"        ng-model="editUserVm.user.userName" placeholder="User Name">
-    <input type="text" name="Email"            ng-model="editUserVm.user.email" placeholder="Email">
-    <input type="text" name="Birthday"         ng-model="editUserVm.user.birthday" placeholder="Birthday">
-    </div>
+    <button id="btns1" class="btn btn-default" ui-sref="userShow({id:editUserVm.currentUser._id})">Back to My Beauty Diary</button>
 
-    <div>
-    <input type="text" name="Favorite Brand 1" ng-model="editUserVm.user.favBrand1" placeholder="Favorite Brand 1">
-    </div>
-    <div>
-    <input type="text" name="Favorite Brand 2" ng-model="editUserVm.user.favBrand2" placeholder="Favorite Brand 2">
-    </div>
-    <div>
-    <input type="text" name="Favorite Brand 3" ng-model="editUserVm.user.favBrand3" placeholder="Favorite Brand 3">
-    </div>
-    <div>
-    <input type="text" name="Favorite Brand 4" ng-model="editUserVm.user.favBrand4" placeholder="Favorite Brand 4">
-    </div>
+<form ng-submit="editUserVm.editUser()">
 
-    <input type="submit" value="Update"></input>
+    <label id="FN" >FIRST NAME:</label>
+        <input class="form-control" type="text" name="First Name"       ng-model="editUserVm.user.firstName">
 
-  </form>
-    <hr>
-    <div class="userBtns">
-    <button ui-sref="userShow({id:editUserVm.currentUser._id})">My Beauty Diary</button>
-    <button ng-click="editUserVm.deleteUser(user)">Delete Profile</button>
-    </div>
+    <label id="FN" >LAST NAME:</label>
+        <input class="form-control" type="text" name="Last Name"        ng-model="editUserVm.user.lastName">
+
+    <label id="FN" >USER NAME:</label>
+        <input class="form-control" type="text" name="User Name"        ng-model="editUserVm.user.userName">
+
+    <label id="FN" >EMAIL:</label>
+        <input class="form-control" type="text" name="Email"            ng-model="editUserVm.user.email">
+
+    <label id="FN" >BIRTHDAY:</label>
+        <input class="form-control" type="text" name="Birthday"         ng-model="editUserVm.user.birthday">
+
+    <label id="FN" >LOVE BRAND:</label>
+        <input class="form-control" type="text" name="Favorite Brand 1" ng-model="editUserVm.user.favBrand1">
+
+    <label id="FN" >LOVE BRAND:</label>
+        <input class="form-control" type="text" name="Favorite Brand 2" ng-model="editUserVm.user.favBrand2">
+
+    <label id="FN" >LOVE BRAND:</label>
+        <input class="form-control" type="text" name="Favorite Brand 3" ng-model="editUserVm.user.favBrand3">
+
+    <label id="FN" >LOVE BRAND:</label>
+        <input class="form-control" type="text" name="Favorite Brand 4" ng-model="editUserVm.user.favBrand4">
+
+        <button id="btns2" class="btn btn-default" type="submit" value="Update">Make Changes</button>
+</form>
+
+      <button id="btns3" class="btn btn-default" ng-click="editUserVm.deleteUser(user)">Delete Profile</button>
 
 </body>
 </html>

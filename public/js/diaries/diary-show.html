@@ -4,67 +4,84 @@
 </head>
 <body>
 
-<div class="diary-show">
-<h1>My Beauty Diary</h1>
-</div>
+  <button id="brs-btn1" type="submit" class="btn btn-default" ui-sref="diaryEdit({id:diaryShowVm.diary._id})">UPDATE MY BEAUTY DIARY</button> <br />
+  <button id="brs-btn2" type="submit" class="btn btn-default" ui-sref="userShow({id:diaryShowVm.currentUser._id})"> MY BEAUTY PROFILE</button>
+
+  <div class="diary-show">
+      <h1>MY BEAUTY DIARY</h1>
+  </div>
 
    <div class="diary-skin">
-   <strong><h3>Skin</h3></strong>
-   <select multiple class="form-control">
-   <option>Brand Name:   {{diaryShowVm.diary.skin.brandName}}</option>
-   <option>Product Name: {{diaryShowVm.diary.skin.productName}}</option>
-   <option>Used For:     {{diaryShowVm.diary.skin.usedFor}}</option>
-   </select>
+     <h3>Skin</h3>
+       <select multiple class="form-control">
+         <option>Brand Name:     {{diaryShowVm.diary.skin.brandName}}</option>
+         <option>Product Name:   {{diaryShowVm.diary.skin.productName}}</option>
+         <option>Used For:       {{diaryShowVm.diary.skin.usedFor}}</option>
+         <option></option>
+         <option></option>
+         <option></option>
+       </select>
    </div>
 
    <div class="diary-face">
-   <h3>Face</h3>
-   <select multiple class="form-control">
-   <option>Brand Name:   {{diaryShowVm.diary.face.brandName}}</option>
-   <option>Product Name: {{diaryShowVm.diary.face.productName}}</option>
-   <option>Used For:     {{diaryShowVm.diary.face.usedFor}}</option>
-   </select>
+     <h3>Face</h3>
+       <select multiple class="form-control">
+         <option>Brand Name:    {{diaryShowVm.diary.face.brandName}}</option>
+         <option>Product Name:  {{diaryShowVm.diary.face.productName}}</option>
+         <option>Used For:      {{diaryShowVm.diary.face.shadeName}}</option>
+         <option></option>
+         <option></option>
+         <option></option>
+       </select>
    </div>
 
     <div class="diary-eyes">
-    <h3>Eyes</h3>
-    <select multiple class="form-control">
-    <option>Brand Name:   {{diaryShowVm.diary.eyes.brandName}}</option>
-    <option>Product Name: {{diaryShowVm.diary.eyes.productName}}</option>
-    <option>Shade Name:   {{diaryShowVm.diary.eyes.shadeName}}</option>
-    </select>
+      <h3>Eyes</h3>
+        <select multiple class="form-control">
+          <option>Brand Name:   {{diaryShowVm.diary.eyes.brandName}}</option>
+          <option>Product Name: {{diaryShowVm.diary.eyes.productName}}</option>
+          <option>Shade Name:   {{diaryShowVm.diary.eyes.shadeName}}</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
     </div>
 
     <div class="diary-lips">
-    <h3>Lips</h3>
-    <select multiple class="form-control">
-    <option>Brand Name:   {{diaryShowVm.diary.lips.brandName}}</option>
-    <option>Product Name: {{diaryShowVm.diary.lips.productName}}</option>
-    <option>Shade Name:   {{diaryShowVm.diary.lips.shadeName}}</option>
-    </select>
+      <h3>Lips</h3>
+        <select multiple class="form-control">
+          <option>Brand Name:   {{diaryShowVm.diary.lips.brandName}}</option>
+          <option>Product Name: {{diaryShowVm.diary.lips.productName}}</option>
+          <option>Shade Name:   {{diaryShowVm.diary.lips.shadeName}}</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
     </div>
 
     <div class="diary-cheeks">
-    <h3>Cheeks</h3>
-    <select multiple class="form-control">
-    <option>Brand Name:   {{diaryShowVm.diary.cheeks.brandName}}</option>
-    <option>Product Name: {{diaryShowVm.diary.cheeks.productName}}</option>
-    <option>Shade Name:   {{diaryShowVm.diary.cheeks.shadeName}}</option>
-    </select>
+      <h3>Cheeks</h3>
+        <select multiple class="form-control">
+          <option>Brand Name:   {{diaryShowVm.diary.cheeks.brandName}}</option>
+          <option>Product Name: {{diaryShowVm.diary.cheeks.productName}}</option>
+          <option>Shade Name:   {{diaryShowVm.diary.cheeks.shadeName}}</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
     </div>
 
     <div class="diary-tools">
-    <h3>Tools</h3>
-    <select multiple class="form-control">
-    <option>Brand Name:   {{diaryShowVm.diary.tools.brandName}}</option>
-    <option>Product Name: {{diaryShowVm.diary.tools.productName}}</option>
-    <option>Used For:     {{diaryShowVm.diary.tools.usedFor}}</option>
-    </select>
+      <h3>Tools</h3>
+        <select multiple class="form-control">
+          <option>Brand Name:   {{diaryShowVm.diary.tools.brandName}}</option>
+          <option>Product Name: {{diaryShowVm.diary.tools.productName}}</option>
+          <option>Used For:     {{diaryShowVm.diary.tools.usedFor}}</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
     </div>
-
-<button ui-sref="diaryEdit({id:diaryShowVm.diary._id})">Edit My Beauty Diary</button>
-<button ui-sref="userShow({id:diaryShowVm.currentUser._id})">BEAUTY PROFILE</button>
-
 </body>
 </html>
 

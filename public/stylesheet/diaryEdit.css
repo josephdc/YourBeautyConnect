@@ -1,13 +1,62 @@
+body {
+  background-color: white;
+  border: lightpink solid 200px;
+  margin-top: -150px;
+  margin-bottom: -200px;
+}
+
+.navbar {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+}
+
+h3 {
+  font-size: 40px;
+  color: grey;
+}
+
 .editDiary {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 20px;
   padding-bottom: 50px;
+  font-size: 40px;
+  margin-bottom: -5%;
 }
 
 #edit-diary {
   text-align: center;
 }
 
-.diaryShowBtn {
-  text-align: center
+.form-control {
+  width: 25%;
+  text-align: center;
+  margin-left: 38%;
+}
+
+label {
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: pink;
+  background-color: white;
+  margin-bottom: -12px;
+  margin-top: 5px
+
+}
+
+.btn {
+  background-color: pink;
+  border: none;
+  margin: 5px;
+  color: white;
+  margin-left: 39%;
+}
+
+.btn:hover {
+  color: pink;
+  background-color: white;
+}
+
+.btns {
+  margin-right: 28%
 }
