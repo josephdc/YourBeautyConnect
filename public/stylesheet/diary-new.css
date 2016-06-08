@@ -1,37 +1,32 @@
 .newDiary {
-  margin-top: 80px;
+  margin-top: 40px;
   text-align: center;
-  font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font-size: 40px;
+  color: grey;}
 
 .navbar-btn {
   color: white;
   background-color: pink;
-  border: none;
-}
+  border: none;}
 
 .navbar-btn:hover {
   background-color: white;
-  color: pink;
-}
+  color: pink;}
 
 .navbar {
     background-color: transparent;
     border: none;
-    position: absolute;
-}
+    position: absolute;}
 
 .form-control {
   width: 35%;
   margin-left: 33%;
-  margin-top: 1%;
-}
+  margin-top: 1%;}
 
 label {
   margin-left: 33%;
   font-size: 25px;
-  color: pink;
-}
+  color: pink;}
 
 .btn {
   margin-left: 46%;
@@ -40,12 +35,10 @@ label {
   margin-bottom: 2%;
   color: white;
   background-color: pink;
-  border: none;
-}
+  border: none;}
 
 .btn:hover {
   background-color: white;
-  color: pink;
-}
+  color: pink;}
 
 
