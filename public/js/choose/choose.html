@@ -6,20 +6,18 @@
 </head>
 <body>
 
-<div class="ybcName">
-Your Beauty Connect
+<div class="ybcName">Your Beauty Connect</div>
+
+<div class="row">
+    <button type="button" class="btns btn-default btn-lg btn-block btn-responsive" id ="home-btn" ui-sref="diaryShow({id:chooseVm.user.diaryId})">BEAUTY DIARY</button>
 </div>
 
 <div class="row">
-<button type="button" class="btns btn-default btn-lg btn-block btn-responsive" id ="home-btn" ui-sref="diaryShow({id:chooseVm.user.diaryId})">BEAUTY DIARY</button>
+    <button type="button" class="btns btn-default btn-lg btn-block btn-responsive" id ="home-btn" ui-sref="userShow({id:chooseVm.currentUser._id})">BEAUTY PROFILE</button>
 </div>
 
 <div class="row">
-<button type="button" class="btns btn-default btn-lg btn-block btn-responsive" id ="home-btn" ui-sref="userShow({id:chooseVm.currentUser._id})">BEAUTY PROFILE</button>
-</div>
-
-<div class="row">
-<button type="button" class="btns btn-default btn-lg btn-block btn-responsive" id ="home-btn" ui-sref="about">ABOUT</button>
+    <button type="button" class="btns btn-default btn-lg btn-block btn-responsive" id ="home-btn" ui-sref="about">ABOUT</button>
 </div>
 
 </body>
