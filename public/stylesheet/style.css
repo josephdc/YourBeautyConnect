@@ -1,34 +1,35 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: pink;
-  border: white solid 75px;
   padding-bottom: 125px;
+  background-color: lightgrey;
   margin: 5%;}
 
 a {
   color: white;}
 
+a:hover {
+  color: black;
+}
 .form-control {
   width: 30%;
   margin-left: 35%;}
 
 .btn {
   background-color: white;
-  color: pink;
+  color: darkgrey;
   border: none;
   margin-left: 45%;
   margin-top: 1%;}
 
 .btn:hover {
-  background-color: pink;
-  color: white;
+  background-color: white;
+  color: darkgrey;
   border: none;}
 
 h1 {
   font-size: 80px;
   text-align: center;
-  color: grey;
-  margin-top: -3%;}
+  color: white;}
 
 h2 {
   text-align: center;
@@ -38,7 +39,8 @@ h3 {
   font-size: 30px;
   color: grey;
   margin-left: 70px;
-  margin-bottom: 15px;}
+  margin-bottom: 15px;
+  padding-top: 15%;}
 
 p {
   text-align: center;

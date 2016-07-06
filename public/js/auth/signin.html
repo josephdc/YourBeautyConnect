@@ -27,59 +27,58 @@
   <form ng-submit="vm.submitSignUp();">
     <div class="form-group">
       <label for="exampleInputFirstName"></label>
-      <input ng-model="vm.signUp.firstName" type="text" class="form-control" id="exampleInputFirstName" placeholder="First Name">
+      <input ng-model="vm.signUp.firstName" type="text" class="form-control" placeholder="First Name">
     </div>
 
     <div class="form-group">
       <label for="exampleInputLastName"></label>
-      <input ng-model="vm.signUp.lastName" type="text" class="form-control" id="exampleInputLastName" placeholder="Last Name">
+      <input ng-model="vm.signUp.lastName" type="text" class="form-control" placeholder="Last Name">
     </div>
 
     <div class="form-group">
       <label for="exampleInputUserName"></label>
-      <input ng-model="vm.signUp.userName" type="text" ng-class="{'red-border': vm.conflict}" class="form-control" id="exampleInputUserName" placeholder="User Name">
+      <input ng-model="vm.signUp.userName" type="text" ng-class="{'red-border': vm.conflict}" class="form-control" placeholder="User Name">
       <small ng-show="vm.conflict" class="text-danger"><em>User Name exists…</em></small>
     </div>
 
     <div class="form-group">
-      <label for="exampleInputEmail"></label>
-      <input ng-model="vm.signUp.email" type="email" ng-class="{'red-border': vm.conflict}" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      <input ng-model="vm.signUp.email" type="email" ng-class="{'red-border': vm.conflict}" class="form-control" placeholder="Email">
       <small ng-show="vm.conflict" class="text-danger"><em>Email exists…</em></small>
     </div>
 
     <div class="form-group">
       <label for="exampleInputPassword1"></label>
-      <input ng-model="vm.signUp.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <input ng-model="vm.signUp.password" type="password" class="form-control" placeholder="Password">
     </div>
 
     <div class="form-group">
       <label for="exampleInputPassword2"></label>
-      <input ng-model="vm.signUp.passwordConfirmation" type="password" class="form-control" id="exampleInputPassword2" placeholder="Password Confirmation">
+      <input ng-model="vm.signUp.passwordConfirmation" type="password" class="form-control"  placeholder="Password Confirmation">
     </div>
 
     <div class="form-group">
       <label for="exampleInputBirthday"></label>
-      <input ng-model="vm.signUp.birthday" type="date" class="form-control" id="exampleInputBirthday" placeholder="Birthday - optional">
+      <input ng-model="vm.signUp.birthday" type="date" class="form-control" placeholder="Birthday - optional">
     </div>
 
     <div class="form-group">
       <label for="exampleInputfavBrand1"></label>
-      <input ng-model="vm.signUp.favBrand1" type="text" class="form-control" id="exampleInputfavBrand1" placeholder="Favorite Cosmetic Brand">
+      <input ng-model="vm.signUp.favBrand1" type="text" class="form-control" placeholder="Favorite Cosmetic Brand">
     </div>
 
     <div class="form-group">
       <label for="exampleInputfavBrand2"></label>
-      <input ng-model="vm.signUp.favBrand2" type="text" class="form-control" id="exampleInputfavBrand2" placeholder="Favorite Cosmetic Brand">
+      <input ng-model="vm.signUp.favBrand2" type="text" class="form-control" placeholder="Favorite Cosmetic Brand">
     </div>
 
     <div class="form-group">
       <label for="exampleInputfavBrand3"></label>
-      <input ng-model="vm.signUp.favBrand3" type="text" class="form-control" id="exampleInputfavBrand3" placeholder="Favorite Cosmetic Brand">
+      <input ng-model="vm.signUp.favBrand3" type="text" class="form-control" placeholder="Favorite Cosmetic Brand">
     </div>
 
     <div class="form-group">
       <label for="exampleInputfavBrand4"></label>
-      <input ng-model="vm.signUp.favBrand4" type="text" class="form-control" id="exampleInputfavBrand4" placeholder="Favorite Cosmetic Brand">
+      <input ng-model="vm.signUp.favBrand4" type="text" class="form-control" placeholder="Favorite Cosmetic Brand">
     </div>
 
     <button type="submit" class="btn btn-default">CREATE</button>

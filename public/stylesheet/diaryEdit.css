@@ -1,8 +1,6 @@
 body {
   background-color: white;
-  border: lightpink solid 200px;
-  margin-top: -150px;
-  margin-bottom: -200px;
+  padding-top: 5%;
 }
 
 .navbar {
@@ -49,7 +47,7 @@ label {
   border: none;
   margin: 5px;
   color: white;
-  margin-left: 39%;
+  margin-left: 40%;
 }
 
 .btn:hover {
@@ -59,4 +57,10 @@ label {
 
 .btns {
   margin-right: 28%
+}
+
+@media(min-width: 414px) {
+  body {
+    padding-top: 15%;
+  }
 }
