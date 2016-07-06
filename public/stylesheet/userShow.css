@@ -58,8 +58,7 @@ h1 {
   opacity: .8;}
 
   @media(min-width: 375px) {
-    .profile-content {
+.profile-content {
     margin-left: 5%;
-}
+    }
 
-  }

@@ -64,3 +64,8 @@ label {
     padding-top: 15%;
   }
 }
+@media(min-width: 320px;) {
+  body {
+
+  }
+}

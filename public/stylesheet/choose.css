@@ -47,19 +47,18 @@ img {
 
 
 
-/*@media screen and (min-width: 375px max-width: 667px) {
-
+@media screen and (min-width: 375px) {
 body {
-  text-align: center;
+        background-size: 230% 100%;
+        background-position: center;
+        }
+#home-btn {
+        margin-left: 35%;
+        margin-top: 5%;
+        }
+.ybcName {
+        padding-top: 30%;
+  }
 }
-img {
-  width: 48%;
-  margin-top: -95%;
 }
 
-.btns {
-  margin: 0px;
-}
-
-}
-*/
