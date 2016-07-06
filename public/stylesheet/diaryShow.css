@@ -57,6 +57,16 @@ h3 {
   border: pink;
 }
 
+select {
+  -webkit-appearance: none;
+  /*webkit browsers */
+  -moz-appearance: none;
+  /*Firefox */
+  appearance: none;
+  /* modern browsers */
+  border-radius: 0;
+}
+
 .diary-show {
   color: pink;
   text-align: center;
